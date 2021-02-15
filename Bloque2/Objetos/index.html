@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Definir un objeto
+         let dog = {};//Cuando hay llaves en una variables es un OBJETO
+         console.log(dog);
+
+
+        //propiedad objeto//La PROPIEDAD es el nombre
+        dog.nombre = "Opi";
+        console.log(dog);
+
+        //objeto iniciliazdo
+        let cat = {nombre: 'Gatu', edad: 1};
+        console.log(cat);
+
+        //Getter
+        console.log("El nombre del perro es: " + dog.nombre + "El nombre del gato es: " + cat.nombre);
+
+        //array objetos
+        let pets = [dog , cat];
+        console.log(pets);
+
+
+        class Persona {
+            constructor (nombre, apellido, edad){
+                this.nombre = nombre;
+                this.apellido = apellido;
+                this.edad = edad;
+            }
+            fullname() {
+                return this.nombre + " " + this.apellido;
+            }
+
+            es_mayor(){
+                if (this.edad > 18){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+        }
+
+        let persona1 = new Persona ("Opi", "Curotto'", 7);
+        console.log("Fullname" + persona1.fullname());
+        console.log("EsMAyor" + persona1.es_mayor() );
+
+     
+
+
+
+    </script>
+</body>
+</html>

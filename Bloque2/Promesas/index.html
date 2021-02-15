@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promesas</title>
+</head>
+<body>
+    <script>
+        ////con resolve se finaliza la promesa 
+        let bajar_de_peso = new Promise((resolve,reject)=>{
+                //resolve("Felicitaciones, lograste tu objetivo!!!");
+                //reject("No lograste tu objetivo!!!");
+                setTimeout(function(){reject("No alacanzaste tu objetivo");
+        },3000);//Despues de los 3 segundos aparece en pantalla
+
+
+        });
+        //bajar de peso va a ser = a una funcion, con then se captura la promesa exitosa
+        // catch para la rechazada
+        bajar_de_peso.then((mensaje) =>{
+            console.log(mensaje);
+        }).catch((mensaje)=>{
+            console.log(mensaje);
+        })
+
+
+    </script>
+
+
+
+</body>
+</html>
