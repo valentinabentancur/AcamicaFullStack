@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios de inscripción</title>
+</head>
+<body>
+    <header>
+        <h1>Formularios de inscripción</h1>
+
+    </header>
+
+    <section>
+        <form action="./index.js" method="GET">
+            <div>
+                <label for="nombre">Tu nombre</label>
+                <input type="text" name="nombre" id="nombre" required placeholder="Ingresa tu nombre">
+            </div>
+            <br>
+            <div>
+                <label for="apellido">Ingresa tu apellido</label>
+                <input type="text" name="apellido" id="apellido" required placeholder="Ingresa tu apellido">
+            </div>
+            <br>
+            <div>
+                <label for="email">Tu email</label>
+                <input type="text" name="email" id="email" required placeholder="Ingresa tu email">
+            </div>
+            <br>
+            <div>
+                <label for="PaisesDeProcedencia">Paises</label>
+                <select name="PaisesDeProcedencia" id="PaisesDeProcedencia" required>
+                    <option value="">Paises</option>
+                <option value="UR">Uruguay</option>
+                <option value="AR">Argentina</option>
+                <option value="BR">Brasil</option>
+            </select>
+            </div>
+            <br>
+            <div>
+                <label for="carrera">Carrera</label>
+                <input type="text" name="carrea" id="carrera" required placeholder="Carrera">
+            </div>
+            <br>
+            <div>
+                <h4> A qué carrera deseas inscribirte?</h4>
+                <label for="UXUI">UX/UI</label>
+                <input type="checkbox" name="UXUI" id="UXUI">
+                <br>
+                <label for="DataScience">DATA SCIENCE</label>
+                <input type="checkbox" name="dataScience" id="DataScience">
+               <br>
+               <label for="DesarrolloWebFullStack">DESARROLLO WEB FULL STACK</label>
+               <input type="checkbox" name="DesarrolloWebFullStack" id="DesarrolloWebFullStack">
+               <br>
+               <label for="frontEndAvanzado">FRONT END AVANZADO</label>
+               <input type="checkbox" name="frontEndAvanzado" id="frontEndAvanzado">
+            </div>
+            <br>
+            <div>
+                <label for="modalidad">MODALIDAD</label>
+              <select name="modalidad" id="modalidad" required>
+                  <option value="">Modalidad</option>
+                  <option value="presencial">Presencial</option>
+                  <option value="online">Online</option>
+              </select>
+            </div>
+            <div>
+                <h4>Estas trabjando actualmente?</h4>
+                <label for="si">Si</label>
+                <input type="radio" name="si" id="si">
+                <label for="no">NO</label>
+                <input type="radio" name="no" id="no">
+            </div>
+            <br>
+            <div>
+                <label for="telefonoDeContacto">Telefono de contacto</label>
+                <input type="text" name="telefonoDecontacto" id="telefonoDeContacto" placeholder="Ingresa tu telefono">
+            </div>
+            <br>
+            <div>
+                <label for="descripcionPersonal">Desacripcion personal</label>
+                <textarea name="descripcionPersonal" id="descripcionPersonal" cols="30" rows="10" maxlength="300"></textarea>
+            </div>
+            <br>
+            <input type="submit" value="Enviar Formulario">
+            <input type="reset" value="Resetar Formulario">
+        </form>
+    </section>
+    
+</body>
+</html>
