@@ -1,0 +1,16 @@
+img {
+    border-style: solid;
+    height: 150px;
+    width: 480px;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h6 {
+    font-family: cursive;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,38 @@
+*{
+    margin: 3px;
+    padding: 3px;
+}
+html{
+    background-color: rgb(108, 108, 172);
+}
+.blog-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: burlywood;
+    text-align: center;
+    background-color: darkseagreen;
+}
+.navbar{
+    font-family: fantasy;
+    color: coral;
+    
+}
+a{
+    text-decoration: none;
+    
+}
+h2{
+    color: coral;
+    font-family: fantasy;
+}
+p{
+    color: rgb(159, 167, 168);
+    font-family: monospace;
+}
+ul{
+    list-style-type: none;
+}
+img{
+    border-style:dotted;
+    border-color: darkgoldenrod;
+    
+}

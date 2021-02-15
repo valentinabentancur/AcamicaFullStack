@@ -1,0 +1,22 @@
+section{
+    text-align: center;
+    background-color: darkseagreen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.image{
+    width: 30%;
+    background-position: center center;
+}
+.button{
+    background-color: rgb(138, 185, 224);
+    color: fuchsia;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    bottom: 20px;
+    border-bottom-style: none;
+    ruby-position: right;
+}
