@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<Script>
+class Persona{
+    constructor(nombre,edad,apellido){
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+    }
+    fullname (){
+        return this.nombre + " " + this.apellido;
+    }
+
+    es_mayor(){
+        if (this.edad >= 18){
+            return true;
+        }else{
+           return false;
+        }
+
+        
+    }
+}
+let nombre = prompt ("Ingrese nombre : ");
+ let apellido = prompt ("Ingrese su apellido: ");
+ let edad = prompt("Ingrese su edad: ");
+
+
+
+
+</Script>
+
+
+    
+</body>
+</html>

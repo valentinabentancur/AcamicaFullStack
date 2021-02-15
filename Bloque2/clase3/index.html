@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    var edad = prompt("Ingrese su edad") //le pido al usuario que ingrese su edad
+//La función prompt devuelve un tipo de dato string.
+//Mediante parseInt transformó el dato a tipo number
+var edad_entera = parseInt(edad);
+
+//pregunto si lo que hay dentro de la variable edad es mayor o igual a 18.
+if(edad_entera >= 18){
+alert("Sos mayor de edad"); //muestro mensaje por pantalla
+
+}else{
+//Resultado de la condición negativo. El else no es obligatorio
+    alert("Eres menor de edad"); //muestro mensaje por pantalla
+}
+function saludo(nombre){
+    var saludo_completo = “Hola “ + nombre;
+    return saludo_completo
+}
+var saludame = saludo(“Josefina”);
+console.log(saludame); //Imprime “Hola Josefina”
+
+<script>
+
+
+var total = 0;
+
+for (let index = 0; index < 5; index++) {
+    var numero = prompt("Ingrese numero");
+    total = suma(total, numero);
+}
+
+alert(total);
+
+function suma(n1, n2){
+    console.log("Estoy en la funcion 'suma'");
+    var suma = parseInt(n1) + parseInt(n2);
+    return suma;
+}
+
+// Verifica si el numero ingresado por parametro es un Number.
+function esNumero(numero){
+    console.log("Estoy en la funcion 'esNumero'");
+    return !isNaN(numero);
+}
+
+////////////////////////SWITCH////////////////////////////////
+switch (fruta){
+    case 'Naranja':
+    console.log("El kilogramo de naranja cuesta $45");
+    break;
+    case 'banana':
+        console.log("El kilogramo de bana cuesta $32");
+        break;
+        default:
+            console.log('Por el momento no disponemos de ' + fruta , '.');
+
+}
+
+
+///////////////////////////////////////////////////////
+var usuario = prompt ("Ingrese su usuario: ");
+console.log(usuario);
+var contraseña = prompt ("Ingrese su contraseña: ");
+console.log(contraseña);
+
+
+function datos (usuario, contraseña){
+    return usuario + contraseña;
+}
+console.log (datos);
+
+
+///////////////////////////////////////////////////////////
+/*Crear un script que permita ingresar solamente
+5 valores mediante prompt y nos muestre la
+suma total de todos los valores ingresados*/
+
+
+
+var num1 = prompt("Ingrese el primer numero:");
+console.log(num1);
+var num2 = prompt("Ingrese el segundo numero:");
+console.log(num2);
+var num3 = prompt("Ingrese el tercer numero:");
+console.log(num3);
+var num4 = prompt("Ingrese el cuarto numero:");
+console.log(num4);
+var num5 = prompt("Ingrese el quinto numero:");
+console.log(num5);
+
+
+if (!isNaN (num1) && !isNaN(num2) && !isNaN(num3) && !isNaN(num4) && !isNaN(num5)){
+    var suma = parseInt(num1) + parseInt(num2) + parseInt (num3) + parseInt (num4) + parseInt(num5);
+    alert ("La suma es: " + suma);
+}else{
+    alert ("LO SIENTO NO SE PUDO EJECUTAR LA SUMA!!!");
+}
+/////A nuestro script agreguemos el promedio de
+//todos los números ingresados.///
+var promedio = 0;
+promedio = suma/5;
+alert("El promedio de los numeros ingresados es: " + promedio);
+
+/////////////////////////////////////////////////////////////
+
+
+/*Ingresar N cantidad de edades mediante prompt
+hasta que se ingrese un cero.
+Al finalizar mostrar cuántos son mayores de edad*/
+
+let edad = prommpt ("Ingrese su edad:");
+console.log(edad);
+
+
+
+</script>
+    
+</body>
+</html>

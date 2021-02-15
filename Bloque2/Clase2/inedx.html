@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <Script>
+        //Crea un HTML y mediante javascript guarda en una variable tu nombre y en otra tu apellido. Con la función alert muestra tu nombre y apellido concatenados.
+
+        var nombre = "Valentina ";
+        var apellido = "Bentancur";
+        alert((nombre) + (apellido));
+
+        /////////////////////////////////////////////////////////////
+
+        var num1 = prompt ("Ingrese un numero: ");
+        
+        var num2 = prompt("Ingrese el siguiente numero: ");
+
+        if(!isNaN(num1) && !isNaN(num2)){
+            var suma = parseInt(num1) + parseInt(num2);
+            alert(suma);
+        }else{
+            alert("LO SIENTO NO SE PUDO EJECUTAR LA SUMA!!!");
+        }
+
+        /////////////////////////////////////////////////////////
+
+        var usuario = prompt("Cuantos km va a recorrer?");
+        console.log(!isNaN (usuario));
+
+        if (!isNaN (usuario) >= 675){
+            alert("Debe recragar el tanque de nafta");
+        }else{
+            alert("Le da para llegar a su destino")
+        }
+      ////////////////////////////////////////////////
+
+      /*El tanque de nafta es igual para todos los modelos y la carga
+máxima es de 50 litros.
+Preguntarle al usuario que modelo esta usando y la cantidad de
+kilómetros que va a realizar.
+Indicarle cuántos tanques de nafta completos necesita para
+realizar el recorrido*/
+
+      var modeloAuto = prompt ("Que modelo de auto esta usando, auto1,auto2 o auto3?");
+      console.log(modeloAuto);
+      var km = prompt("Cuantos km va a realizar?");
+      console.log(km);
+
+        var auto1 = 0;
+        var auto2 = 0;
+        var auto3 = 0;
+
+        if (modeloAuto == auto1){
+            alert ("Necesita recargar 3 tanques de nafta");
+        } else if (modeloAuto == auto2){
+            alert ("Necesita recragar 4 tanques de nafta");
+        }else (modeloAuto == auto3)
+            alert("Necesita recargar 5 tanques de nafta");
+            ///////////////////////////////////////////////////////////////////
+    
+
+
+
+    </Script>
+
+</body>
+
+</html>
